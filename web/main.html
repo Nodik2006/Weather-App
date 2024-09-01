@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <script src="eel.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="img/logo.png" type="image/png" />
+  </head>
+  <body>
+    <div class="container" id="mainContainer">
+      <h1 id="appTitle">Погодное приложение</h1>
+      <input type="text" id="cityInput" placeholder="Введите название города" />
+      <button onclick="getWeather()" id="getWeatherBtn">Получить погоду</button>
+      <div id="weatherInfo"></div>
+      <button id="settingsBtn" onclick="showSettings()">
+        <img src="img/settings.png" alt="Settings" class="settings-icon" />
+      </button>
+    </div>
+
+    <div class="container" id="settingsContainer" style="display: none">
+      <h2 id="settingsTitle">Настройки</h2>
+      <input type="text" id="apiKeyInput" placeholder="Введите API ключ" />
+      <select id="languageSelect">
+        <option value="ru">Русский</option>
+        <option value="en">English</option>
+      </select>
+      <select id="themeSelect">
+        <option value="blue">Синяя тема</option>
+        <option value="red">Красная тема</option>
+        <option value="dark">Темная тема</option>
+        <option value="light">Светлая тема</option>
+      </select>
+      <button onclick="saveSettings()" id="saveSettingsBtn">
+        Сохранить настройки
+      </button>
+      <button onclick="showMain()" class="back-btn" id="backBtn">
+        Вернуться
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
