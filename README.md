@@ -22,7 +22,7 @@
 1. Клонируйте репозиторий:
 
    ```
-   git clone https://github.com/yourusername/weather-app.git
+   git clone https://github.com/n1dlee/Weather-App.git
    cd weather-app
    ```
 
@@ -82,7 +82,7 @@ This is a simple weather application created using Python (Eel) for the backend 
 1. Clone the repository:
 
    ```
-   git clone https://github.com/yourusername/weather-app.git
+   git clone https://github.com/n1dlee/Weather-App.git
    cd weather-app
    ```
 
